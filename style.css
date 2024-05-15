@@ -1,0 +1,60 @@
+/**body style**/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+
+}
+/**for creating shape of a calculator**/
+.calculator{
+    background-color:black;
+    border-radius: 30px;
+    box-shadow:0px 3px 15px rgba(113,115,119,0.5);
+    width:300px;
+    padding: 10px;
+}
+.display{
+    width: 260px;
+    padding: 20px;
+    font-size:40px;
+    border-radius:5px;
+    margin: 10px;
+    background:transparent;
+    box-shadow: 0px 3px 15px rgba(84,84,84,0.1);
+    text-align: right;
+    cursor:pointer;
+    color:#ffffff;
+
+}
+.display::placeholder{
+    color: #ffffff;
+}
+/**arranging buttons in grid form as in calculator**/
+.buttons{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:5px;
+    padding:10px;
+}
+
+button{
+    font-size:25px ;
+    background-color: rgba(170, 169, 192, 0.8);
+    color:#ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#d0d0d0;
+    color: black;
+}
+/**using color property for buttons AC and '=' to identity easily**/
+#AC{
+    background-color: chocolate;
+}
+#output{
+    background-color:blue ;
+}
